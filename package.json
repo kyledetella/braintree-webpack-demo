@@ -1,0 +1,16 @@
+{
+  "name": "braintree-webpack-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -rf dist; npm run build:npm; npm run build:vendor",
+    "build:npm": "webpack ./lib/app.js ./dist/app-built.js",
+    "build:vendor": "webpack ./lib/app-vendor.js ./dist/app-built-vendor.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "braintree-web": "2.9.0",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.1"
+  }
+}
